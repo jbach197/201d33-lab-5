@@ -17,7 +17,7 @@ function sum(a, b) { //eslint-disable-line
   return [sumOfTwoNums, sumString];
 }
 //Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+//testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -31,13 +31,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-    var productOfTwoNumbers = a + b
+    var productOfTwoNumbers = a * b
     var productString = 'The product of ' + a + ' and ' + b + ' is ' + productOfTwoNumbers + '.';
-    return [productOfTwoNumber, productString]
+    return [productOfTwoNumbers, productString]
   }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+//testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -54,11 +54,24 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+  var d = parseInt(sum(a,b)[0]);
+  var a1 = d;
+  var b1 = c;
+  var sumThreeNum = parseInt(sum(a1,b1)[0]);
 
+  var e = parseInt(multiply(a,b)[0]);
+  var a2 = e;
+  var productThreeNum = parseInt(multiply(a2,b1)[0]);
+
+  var sumThreeNumString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumThreeNum + '.';
+  var productThreeNumString = 'The product of '+ a + ' and ' + b + ' and ' + c + ' is ' + productThreeNum + '.';
+
+  return[sumThreeNum, productThreeNum, sumThreeNumString, productThreeNumString]
 }
 
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -76,7 +89,7 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(testArray) { //eslint-disable-line
-
+  
 }
 
 // Here is the test for sumArray(); uncomment it to run it
