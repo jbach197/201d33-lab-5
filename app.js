@@ -97,14 +97,14 @@ function sumArray(testArray) { //eslint-disable-line
   newTestArray.push(y);  //add total to new array
   newTestArray.shift();  //remove old total
    
-  var answer = testArray + ' was passed in as an array of numbers, and ' + y + ' is their sum.'
+  var answer = testArray.toString() + ' was passed in as an array of numbers, and ' + y + ' is their sum.'
 
   return[answer];
 } 
 
 // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+//testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
