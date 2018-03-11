@@ -120,10 +120,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray) { //eslint-disable-line
+  var newTestArray = [];  //create new array to hold results
+  var z = parseInt(multiply(testArray[0], testArray[1])[0]);  //add first two numbers in the original array
+  newTestArray.push(z);  //insert answer into new array.
+  
+  var y = parseInt(multiply(newTestArray[0], testArray[2])[0]);  //add 3rd item in array to total.
+  newTestArray.push(y);  //add total to new array
+  newTestArray.shift();  //remove old total
+   
+  var answer = 'The numbers ' + testArray.toString() + ' have a product of ' + y + '.';
 
-}
+  return[answer];
+} 
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+//testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
